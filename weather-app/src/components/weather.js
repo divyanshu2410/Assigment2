@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "../App.css"
 
 const Weather = () => {
     const [city, setCity] = useState('');
@@ -24,13 +25,14 @@ const Weather = () => {
     };
 
     return (
-        <div>
+        <div className="app-main">
             <form onSubmit={handleSubmit}>
                 <input type="text" 
+                className="input-box"
                 placeholder="Enter city name" 
                 value={city} 
                 onChange={(e) => setCity(e.target.value)} />
-                <button type="submit">Get details</button>
+                <button type="submit" className="button">Get details</button>
             </form>
 
             {error && <p>{error}</p>}

@@ -36,3 +36,33 @@ button:hover {
 .error {
   color: red;
 }
+
+.app-main > * {
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 20%;
+  background: rgb(199, 255, 253);
+  color: rgb(123, 94, 227);
+  font-weight: 500;
+  border: none;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.button {
+  width: 120px;
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: 30px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+  cursor: pointer;
+}
